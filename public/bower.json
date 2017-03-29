@@ -1,0 +1,22 @@
+{
+  "name": "public",
+  "homepage": "https://github.com/piyapan/mobile",
+  "authors": [
+    "piyapan <subaruqui@gmail.com>"
+  ],
+  "description": "third-praty my project",
+  "main": "lib",
+  "moduleType": [],
+  "keywords": [
+    "test"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

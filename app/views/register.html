@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- <script type="text/javascript" src="/js/lib/angular-mocks.js"></script>
+    <script type="text/javascript" src="/js/lib/angular-route.min.js"></script> -->
+
+    <script type="text/javascript" src="js/lib/angular-route.min.js"></script>
+    <script type="text/javascript" src="js/lib/angular-mocks.js"></script>
+    <script type="text/javascript" src="js/lib/angular.min.js"></script>
+    <title></title>
+  </head>
+  <body>
+    <div class="" ng-app="Register">
+        <div class="" ng-controller="RegisterController">
+          <form action="">
+            <input type="text" placeholder="full name" ng-model="User.full">
+            <input type="text" placeholder="username" ng-model="User.username">
+            <input type="password" placeholder="password" ng-model="User.password">
+            <input type="email" placeholder="email" ng-model="User.email">
+          </form>
+          <div class="">
+            <button type="button" name="send" ng-click="send(User)">Register</button>
+          </div>
+        </div>
+    </div>
+    <script type="text/javascript"  src="/js/modules/resgister/register.module.js"></script>
+    <script type="text/javascript" src="/js/services/register/register.service.js"></script>
+    <script type="text/javascript" src="/js/controllers/register/register.controller.js"></script>
+
+  </body>
+</html>

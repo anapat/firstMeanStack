@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/main.css" media="screen" title="no title" charset="utf-8">
+    <script type="text/javascript" src="/js/lib/angular-mocks.js"></script>
+    <script type="text/javascript" src="/js/lib/angular-route.min.js"></script>
+    <script type="text/javascript" src="/js/lib/angular.min.js"></script>
+    <link rel="stylesheet" href="/css/screen.css" media="screen" title="no title" charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <div class="logo">
+          <h1>logo</h1>
+        </div>
+        <ul class="menu">
+          <li><a href="/">Home</a></li>
+          <li><a href="">Board</a></li>
+          <li><a href="">Hot</a></li>
+          <li><a href="/signin">Login</a></li>
+        </ul>
+      </div>
+    </nav>
+
+<section>
+    <div class="box-item">
+      <div class="borad">
+        <div class="content">
+           <div class="head">
+             <h1>HEADER</h1>
+           </div>
+        </div>
+        <div class="detail">
+          <div class="box">
+            <span>Actor:Prapan Nansathid</span>
+          </div>
+          <div class="box">
+            <span>Like: 10</span>
+          </div>
+          <div class="box"><span>Comment: 30</span></div>
+        </div>
+    </div>
+    <div class="borad">
+        <div class="content">
+           <div class="head">
+             <h1>HEADER</h1>
+           </div>
+        </div>
+        <div class="detail">
+          <div class="box">
+            <span>Actor: Piyapan </span>
+          </div>
+          <div class="box">
+            <span>Like: 10</span>
+          </div>
+          <div class="box"><span>Comment: 10</span></div>
+        </div>
+    </div>
+    <div class="content" ng-app="myapp" ng-controller="main">
+
+      <form class="" action="index.html" method="post">
+        <input type="text" name="name" value="" ng-model="s.a">
+        <input type="text" name="name" value="" ng-model="s.b" ng-change="pushe(s)">
+      </form>
+      <div>
+        {{ result }}
+      </div>
+    </div>
+    <div class="borad">
+
+        <div class="content">
+           <div class="head">
+             <h1>HEADER</h1>
+           </div>
+        </div>
+        <div class="detail">
+          <div class="box">
+            <span>Actor: Taweesin</span>
+          </div>
+          <div class="box">
+            <span>Like: 12</span>
+          </div>
+          <div class="box"><span>Comment: 20</span></div>
+        </div>
+    </div>
+    <div class="borad">
+        <div class="content">
+           <div class="head">
+             <h1>HEADER</h1>
+           </div>
+        </div>
+        <div class="detail">
+          <div class="box">
+            <span>Actor: Taweesin</span>
+          </div>
+          <div class="box">
+            <span>Like: 12</span>
+          </div>
+          <div class="box"><span>Comment: 20</span></div>
+        </div>
+    </div>
+    <div class="borad">
+        <div class="content">
+           <div class="head">
+             <h1>HEADER</h1>
+           </div>
+        </div>
+        <div class="detail">
+          <div class="box">
+            <span>Actor: Taweesin</span>
+          </div>
+          <div class="box">
+            <span>Like: 12</span>
+          </div>
+          <div class="box"><span>Comment: 20</span></div>
+        </div>
+    </div>
+    <div class="borad">
+        <div class="content">
+           <div class="head">
+             <h1>HEADER</h1>
+           </div>
+        </div>
+        <div class="detail">
+          <div class="box">
+            <span>Actor: Taweesin</span>
+          </div>
+          <div class="box">
+            <span>Like: 12</span>
+          </div>
+          <div class="box"><span>Comment: 20</span></div>
+        </div>
+    </div>
+  </div>
+</section>
+  </body>
+  <script type="text/javascript">
+    angular.module('myapp',[]).controller('main',['$scope',function($scope){
+      $scope.result = 0;
+      $scope.pushe  = function(s){
+        var n1 = parseInt(s.a);
+        var n2 = parseInt(s.b);
+        $scope.result = n1 + n2;
+        if()
+      }
+    }]);
+  </script>
+</html>

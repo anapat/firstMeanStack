@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <script type="text/javascript" src="js/lib/angular.min.js"></script>
+    <title>locations</title>
+  </head>
+  <body>
+    <h1> Hi locations </h1>
+    <div ng-app="locations">
+      <div ng-controller="LoacationCtrl">
+        {{test}}
+        <li><p>latitude:</p>{{la | json}}</li>
+        <li><p>longitude:</p>{{lon| json }}</li>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="js/modules/locations_module.js"></script>
+  <script type="text/javascript" src="js/controllers/locations_controller.js">
+  </script>
+</html>
